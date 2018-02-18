@@ -73,7 +73,6 @@ Therefore by using a scanf function inside the for loop we can enter multiple va
 
 ## Code Logic 
 
-After entering the size of arry and the vales in each arry zeros are appended to the ends of the x[] and h[] so as to make the lenght of of these arrays equal to m+n-1 (i.e the lecth of the convolved sequence).
 ```c
 for(i=m;i<=m+n-1;i++)
 {
@@ -84,6 +83,57 @@ for(i=n;i<=m+n-1;i++)
 h[i]=0;
 }
 ```
+After entering the size of arry and the vales in each arry zeros are appended to the ends of the x[] and h[] so as to make the lenght of of these arrays equal to m+n-1 (i.e the lecth of the convolved sequence).
+
+```c
+for(i=0;i<=m+n-1;i++)
+{
+y[i]=0;
+for(j=0;j<=i;j++)
+{
+y[i]=y[i]+(x[j]*h[i-j]);
+}
+}
+```
+The next bit of code is a bit more complex but nothing to worry, it is a nested for loop. This can be easily explainded with an example.
+
+Array x[] | Index | Array h[] | Index 
+------------ | ------------- | ------------- |------------- 
+1 | 0 | 3 | 0
+2 | 1 | 4 | 1
+0 | 2 | 0 | 0
+
+Here we have two arrys after appending 0's. 
+
+When i = 0,
+j = 0
+
+y[0] = 0 + 1 x 3 = 3
+
+When i = 1,
+j = 0
+
+y[1] = 0 +  4 x 1 = 4
+
+j= 1 
+
+y[1] = 4 + 2 x 3 = 10 
+
+when i = 2,
+j = 0
+
+y[2] = 0 + 1 x 0 = 0
+
+j = 1 
+
+y[2] = 0 + 2 x 4 = 8
+
+j = 2 
+
+y[2] = * + 0 x 3 = 8
+
+Therefore we have y[] = [3 10 8] 
+
 
 
 

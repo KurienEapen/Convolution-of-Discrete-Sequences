@@ -3,16 +3,16 @@ main()
 {
 float x[15],h[15],y[15];
 int i,j,m,n;
-printf("enter value for m:");
+printf("Enter the length of the first sequence, m = ");
 scanf("%d",&m);
-printf("enter value for n:");
+printf("Enter the length of the second sequence, n = ");
 scanf("%d",&n);
-printf("enter the value of x(n):");
+printf("Enter the first sequence x[n]:");
 for(i=0;i<m;i++)
-{
+
 scanf("%f",&x[i]);
 }
-printf("enter the value of h(n):");
+printf("Enter the second sequence h[n]:");
 for(i=0;i<n;i++)
 {
 scanf("%f",&h[i]);
@@ -33,6 +33,7 @@ for(j=0;j<=i;j++)
 y[i]=y[i]+(x[j]*h[i-j]);
 }
 }
+printf("Convoluted sequence is :\n");
 for(i=0;i<m+n-1;i++)
 {
 printf("y[%d]=%f\n",i,y[i]);

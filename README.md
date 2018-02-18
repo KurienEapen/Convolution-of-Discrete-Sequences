@@ -71,6 +71,20 @@ scanf("%f",&x[i]);
 ```
 Therefore by using a scanf function inside the for loop we can enter multiple vales into the array x[i], till the condition i,<m where m is the length of the array.
 
+## Code Logic 
+
+After entering the size of arry and the vales in each arry zeros are appended to the ends of the x[] and h[] so as to make the lenght of of these arrays equal to m+n-1 (i.e the lecth of the convolved sequence).
+```c
+for(i=m;i<=m+n-1;i++)
+{
+x[i]=0;
+}
+for(i=n;i<=m+n-1;i++)
+{
+h[i]=0;
+}
+```
+
 
 
 

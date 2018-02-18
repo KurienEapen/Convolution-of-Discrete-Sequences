@@ -9,7 +9,7 @@ printf("Enter the length of the second sequence, n = ");
 scanf("%d",&n);
 printf("Enter the first sequence x[n]:");
 for(i=0;i<m;i++)
-
+{
 scanf("%f",&x[i]);
 }
 printf("Enter the second sequence h[n]:");

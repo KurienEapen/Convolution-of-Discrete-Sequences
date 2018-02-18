@@ -1,6 +1,6 @@
 # Convolution of Discrete Sequences
 C program to perform convolution of two discrete sequences. To test the code, open *convolution.c* (above this),
-![convolution](https://github.com/KurienEapen/Convolution-of-Discrete-Sequences/blob/master/convolution_image.png)copy the code and paste it on an online compiler like https://www.onlinegdb.com/online_c_compiler, https://repl.it/repls/ImportantGigaDribbleware, or anyother. Press run and enter the values. 
+![convolution]()copy the code and paste it on an online compiler like https://www.onlinegdb.com/online_c_compiler, https://repl.it/repls/ImportantGigaDribbleware, or anyother. Press run and enter the values. 
 
 ## Code Breakdown 
 
